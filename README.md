@@ -1,16 +1,72 @@
-# React + Vite
+# Pathway
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web para criação e organização de roteiros de passeios utilizando uma **timeline interativa**.
 
-Currently, two official plugins are available:
+O usuário pode criar um roteiro com informações básicas (local, cidade, data e horário) e adicionar **etapas personalizadas** para montar todo o percurso de forma visual, simples e prática.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ✅ Criar roteiros personalizados
+- ✅ Listar e visualizar todos os roteiros criados
+- ✅ Abrir detalhes de cada roteiro em modal
+- ✅ Adicionar etapas ao roteiro (horário + descrição)
+- ✅ Remover etapas individualmente
+- ✅ Remover roteiros completos
+- ✅ Persistência de dados com **LocalStorage**
+- ✅ Interface responsiva (desktop e mobile)
+- ✅ Modais com blur e controle de scroll
+- ✅ Menu mobile com animação
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologias
+
+### Front-end
+- **React**
+- **Vite**
+- **JavaScript (ES6+)**
+- **Tailwind CSS**
+
+### Outros recursos
+- LocalStorage (persistência de dados)
+- Animações com CSS/Tailwind
+- Componentização com React
+
+---
+
+## 🎯 Objetivo do projeto
+
+Projeto desenvolvido com foco em:
+
+- Prática real de **React com componentes e estado**
+- Implementação de **CRUD completo**
+- Manipulação de dados persistidos via LocalStorage
+- Criação de **modais e controle de UX**
+- Desenvolvimento de layouts com **Tailwind CSS**
+- Separação de lógica e interface
+
+---
+
+## 💻 Como rodar o projeto localmente
+
+### Pré-requisitos
+
+- Node.js 18+
+- Git
+
+### Passo a passo
+
+```bash
+# Clone o repositório
+git clone https://github.com/Luan067/pathway-react.git
+
+# Acesse a pasta
+cd pathway-react
+
+# Instale as dependências
+npm install
+
+# Rode em modo desenvolvimento
+npm run dev
