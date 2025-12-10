@@ -10,7 +10,7 @@ const ModalRoteiro = ({ roteiroAberto, setRoteiroAberto, modalEtapa, setModalEta
   }
 
   function handleDelete(roteiroId, etapaId) {
-    removeEtapa(roteiroId, etapaId)
+    removeEtapa(roteiroId, etapaId);
   }
 
   return (
@@ -44,14 +44,17 @@ const ModalRoteiro = ({ roteiroAberto, setRoteiroAberto, modalEtapa, setModalEta
             {etapas.length ? (
               etapas.map((etapa) => (
                 <div key={etapa.id} className="flex gap-4 bg-slate-100 odd:bg-slate-200 items-center group hover:bg-slate-200 odd:hover:bg-slate-300">
-                  <div className="flex max-sm:flex-wrap flex-1 rounded-xl p-4 shadow-sm transition justify-between max-sm:flex-col">
+                  <div className="flex gap-4 max-sm:flex-wrap items-end flex-1 rounded-xl p-4 shadow-sm transition justify-between max-sm:flex-col">
                     <div>
                       <div className="flex items-center justify-between mb-1">
                         <span className="text-xs font-semibold px-2 py-1 rounded-full bg-slate-300 text-slate-800">{etapa.horario}</span>
                       </div>
-                      <p className="text-slate-700 leading-snug">{etapa.descricao}</p>
+                      <p className="text-slate-700 leading-snug break-all text-balance">{etapa.descricao}</p>
                     </div>
-                    <button onClick={() => handleDelete(roteiroAberto.id, etapa.id)} className="max-sm:self-start max-sm:mt-4 self-end py-2 px-3 bg-red-100 text-red-900 rounded-lg cursor-pointer hover:text-red-950 hover:bg-red-300 transition">
+                    <button
+                      onClick={() => handleDelete(roteiroAberto.id, etapa.id)}
+                      className="max-sm:self-start max-sm:mt-4 self-end py-2 px-3 bg-red-100 text-red-900 rounded-lg cursor-pointer hover:text-red-950 hover:bg-red-300 transition"
+                    >
                       Excluir
                     </button>
                   </div>
