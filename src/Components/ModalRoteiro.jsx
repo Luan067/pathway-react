@@ -44,10 +44,10 @@ const ModalRoteiro = ({ roteiroAberto, setRoteiroAberto, modalEtapa, setModalEta
             {etapas.length ? (
               etapas.map((etapa) => (
                 <div key={etapa.id} className="flex gap-4 bg-slate-100 odd:bg-slate-200 items-center group hover:bg-slate-200 odd:hover:bg-slate-300">
-                  <div className="flex gap-4 max-sm:flex-wrap items-end flex-1 rounded-xl p-4 shadow-sm transition justify-between max-sm:flex-col">
+                  <div className="flex gap-4 max-sm:flex-wrap items-end flex-1 rounded-xl p-4 shadow-sm transition justify-between max-sm:flex-col group">
                     <div>
                       <div className="flex items-center justify-between mb-1">
-                        <span className="text-xs font-semibold px-2 py-1 rounded-full bg-slate-300 text-slate-800">{etapa.horario}</span>
+                        <span className="text-xs font-semibold px-2 py-1 rounded-full bg-slate-300 text-slate-800 group-hover:bg-slate-400">{etapa.horario}</span>
                       </div>
                       <p className="text-slate-700 leading-snug break-all text-balance">{etapa.descricao}</p>
                     </div>
