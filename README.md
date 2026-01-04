@@ -6,6 +6,12 @@ O usuário pode criar um roteiro com informações básicas (local, cidade, data
 
 ---
 
+## • Projeto online •
+
+https://pathway-react.vercel.app
+
+---
+
 ## 🚀 Funcionalidades
 
 - ✅ Criar roteiros personalizados
